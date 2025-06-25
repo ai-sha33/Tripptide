@@ -44,7 +44,7 @@ export default function FlightSearch() {
 
           {/* Dynamic Search Form */}
           <div className="overflow-x-auto">
-            <div className="bg-white rounded-full sm:rounded-md p-4 shadow-md flex flex-col md:flex-row items-center gap-3 text-black flex-wrap justify-center min-w-[320px]">
+            <div className="bg-white rounded-full sm:rounded-sm p-4 shadow-md flex flex-col md:flex-row items-center gap-3 text-black flex-wrap justify-center min-w-[320px]">
               {/* From */}
               <div className="flex items-center border rounded-full px-4 py-2 space-x-2">
                 <MapPin className="w-4 h-4 text-green-600" />
@@ -54,7 +54,7 @@ export default function FlightSearch() {
               </div>
 
               {/* To */}
-              <div className="flex items-center border rounded-full sm:rounded-md px-4 py-2 space-x-2">
+              <div className="flex items-center border rounded-full sm:rounded-sm px-4 py-2 space-x-2">
                 <Plane className="w-4 h-4 text-green-600" />
                 <span className="text-sm">
                   To: <strong>Lukla (LUA)</strong>
@@ -64,7 +64,7 @@ export default function FlightSearch() {
               {/* Dates */}
               {activeTab === "Round Trip" && (
                 <>
-                  <div className="flex items-center border rounded-full sm:rounded-md px-4 py-2 space-x-2">
+                  <div className="flex items-center border rounded-full sm:rounded-sm px-4 py-2 space-x-2">
                     <Calendar className="w-4 h-4 text-green-600" />
                     <span className="text-sm">Depart: Jun 29</span>
                   </div>
@@ -76,7 +76,7 @@ export default function FlightSearch() {
               )}
 
               {activeTab === "One-way" && (
-                <div className="flex items-center border rounded-full sm:rounded-md px-4 py-2 space-x-2">
+                <div className="flex items-center border rounded-full sm:rounded-sm px-4 py-2 space-x-2">
                   <Calendar className="w-4 h-4 text-green-600" />
                   <span className="text-sm">Date: Jun 30</span>
                 </div>
@@ -84,13 +84,13 @@ export default function FlightSearch() {
 
               {activeTab === "Multi-city" && (
                 <>
-                  <div className="flex items-center border rounded-full sm:rounded-md px-4 py-2 space-x-2">
+                  <div className="flex items-center border rounded-full sm:rounded-sm px-4 py-2 space-x-2">
                     <Plane className="w-4 h-4 text-green-600" />
                     <span className="text-sm">
                       From: KTM → LUA (Jun 30)
                     </span>
                   </div>
-                  <div className="flex items-center border rounded-full px-4 py-2 space-x-2">
+                  <div className="flex items-center border rounded-full sm:rounded-sm px-4 py-2 space-x-2">
                     <Plane className="w-4 h-4 text-green-600" />
                     <span className="text-sm">
                       From: LUA → PKR (Jul 5)
@@ -100,21 +100,21 @@ export default function FlightSearch() {
               )}
 
               {/* Passenger/Class */}
-              <div className="flex items-center border rounded-full px-4 py-2 space-x-2 cursor-pointer">
+              <div className="flex items-center border rounded-full sm:rounded-sm px-4 py-2 space-x-2 cursor-pointer">
                 <User className="w-4 h-4 text-green-600" />
                 <span className="text-sm">1 Person, Economy</span>
                 <ChevronDown className="w-4 h-4 text-gray-500" />
               </div>
 
               {/* Search Button */}
-              <button className="bg-[#0d3a63] hover:bg-[#15406d] text-white rounded-full px-6 py-2 font-semibold">
+              <button className="bg-[#0d3a63] hover:bg-[#15406d] text-white rounded-full sm:rounded-sm px-6 py-2 font-semibold">
                 Find flights
               </button>
             </div>
           </div>
 
           {/* Checkboxes */}
-          <div className="mt-4 flex flex-col sm:flex-row justify-center gap-4 bg-white p-4 rounded-full shadow text-black text-sm">
+          <div className="mt-4 flex flex-col sm:flex-row justify-center gap-4 bg-white p-4 rounded-full sm:rounded-sm shadow text-black text-sm">
             <label className="flex items-center space-x-2">
               <input type="checkbox" className="form-checkbox" />
               <span>Prefer nonstop</span>
