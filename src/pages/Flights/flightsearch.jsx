@@ -114,7 +114,7 @@ export default function FlightSearch() {
           </div>
 
           {/* Checkboxes */}
-          <div className="mt-4 flex flex-col sm:flex-row justify-center gap-4 bg-white p-4 rounded-full sm:rounded-sm shadow text-black text-sm">
+          <div className="mt-4 flex flex-col sm:flex-row justify-center gap-4 bg-white p-4 lg:rounded-full sm:rounded-sm shadow text-black text-sm">
             <label className="flex items-center space-x-2">
               <input type="checkbox" className="form-checkbox" />
               <span>Prefer nonstop</span>
