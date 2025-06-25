@@ -34,7 +34,7 @@ const End = () => {
         {features.map((feature, idx) => (
           <motion.div
             key={idx}
-            className="bg-[#ECA35F] rounded-xl sm:rounded-full p-4 sm:p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+            className="bg-[#ECA35F] rounded-xl sm:rounded-md p-4 sm:p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
