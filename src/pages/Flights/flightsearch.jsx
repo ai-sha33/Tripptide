@@ -44,7 +44,7 @@ export default function FlightSearch() {
 
           {/* Dynamic Search Form */}
           <div className="overflow-x-auto">
-            <div className="bg-white rounded-full p-4 shadow-md flex flex-col md:flex-row items-center gap-3 text-black flex-wrap justify-center min-w-[320px]">
+            <div className="bg-white rounded-full sm:rounded-md p-4 shadow-md flex flex-col md:flex-row items-center gap-3 text-black flex-wrap justify-center min-w-[320px]">
               {/* From */}
               <div className="flex items-center border rounded-full px-4 py-2 space-x-2">
                 <MapPin className="w-4 h-4 text-green-600" />
@@ -54,7 +54,7 @@ export default function FlightSearch() {
               </div>
 
               {/* To */}
-              <div className="flex items-center border rounded-full px-4 py-2 space-x-2">
+              <div className="flex items-center border rounded-full sm:rounded-md px-4 py-2 space-x-2">
                 <Plane className="w-4 h-4 text-green-600" />
                 <span className="text-sm">
                   To: <strong>Lukla (LUA)</strong>
@@ -64,7 +64,7 @@ export default function FlightSearch() {
               {/* Dates */}
               {activeTab === "Round Trip" && (
                 <>
-                  <div className="flex items-center border rounded-full px-4 py-2 space-x-2">
+                  <div className="flex items-center border rounded-full sm:rounded-md px-4 py-2 space-x-2">
                     <Calendar className="w-4 h-4 text-green-600" />
                     <span className="text-sm">Depart: Jun 29</span>
                   </div>
@@ -76,7 +76,7 @@ export default function FlightSearch() {
               )}
 
               {activeTab === "One-way" && (
-                <div className="flex items-center border rounded-full px-4 py-2 space-x-2">
+                <div className="flex items-center border rounded-full sm:rounded-md px-4 py-2 space-x-2">
                   <Calendar className="w-4 h-4 text-green-600" />
                   <span className="text-sm">Date: Jun 30</span>
                 </div>
@@ -84,7 +84,7 @@ export default function FlightSearch() {
 
               {activeTab === "Multi-city" && (
                 <>
-                  <div className="flex items-center border rounded-full px-4 py-2 space-x-2">
+                  <div className="flex items-center border rounded-full sm:rounded-md px-4 py-2 space-x-2">
                     <Plane className="w-4 h-4 text-green-600" />
                     <span className="text-sm">
                       From: KTM → LUA (Jun 30)

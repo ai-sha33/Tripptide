@@ -34,16 +34,18 @@ const End = () => {
         {features.map((feature, idx) => (
           <motion.div
             key={idx}
-            className="bg-[#ECA35F] rounded-full p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+            className="bg-[#ECA35F] rounded-xl sm:rounded-full p-4 sm:p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: idx * 0.2 }}
           >
-            <h3 className="text-xl font-semibold text-[#2294A5] font-serif mb-2">
+            <h3 className="text-xl font-semibold text-[#2294A5] font-serif mb-2 break-words">
               {feature.title}
             </h3>
-            <p className=" italic text-sm text-[#072450] ">{feature.description}</p>
+            <p className="italic text-sm text-[#072450] break-words text-wrap">
+              {feature.description}
+            </p>
           </motion.div>
         ))}
       </div>
