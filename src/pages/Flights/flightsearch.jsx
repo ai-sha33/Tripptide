@@ -44,7 +44,7 @@ export default function FlightSearch() {
 
           {/* Dynamic Search Form */}
           <div className="overflow-x-auto">
-            <div className="bg-white rounded-full sm:rounded-sm p-4 shadow-md flex flex-col md:flex-row items-center gap-3 text-black flex-wrap justify-center min-w-[320px]">
+            <div className="bg-white lg:rounded-full sm:rounded-sm p-4 shadow-md flex flex-col md:flex-row items-center gap-3 text-black flex-wrap justify-center min-w-[320px]">
               {/* From */}
               <div className="flex items-center border rounded-full px-4 py-2 space-x-2">
                 <MapPin className="w-4 h-4 text-green-600" />
